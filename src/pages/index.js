@@ -1,4 +1,5 @@
-import * as React from "react"
+import *  as React from "react"
+import { useState, useEffect } from "react"
 
 // styles
 const pageStyles = {
@@ -9,8 +10,13 @@ const pageStyles = {
 
 // markup
 const IndexPage = () => {
+  const [defaultLanguage, setDefaultLanguage] = useState("")
+  
 
-  const defaultLanguage = window.navigator.language
+  useEffect(()=>{
+    const defaultLanguage = window.navigator.language
+    setDefaultLanguage(defaultLanguage)
+  }, [])
 
   return (
     <main style={pageStyles}>
