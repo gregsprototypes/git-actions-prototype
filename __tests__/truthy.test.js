@@ -1,3 +1,3 @@
 test('true is truthy',()=>{
-    expect(false).toBeTruthy()
+    expect(true).toBeTruthy()
 })
