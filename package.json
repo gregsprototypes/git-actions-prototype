@@ -4,7 +4,12 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "develop": "gatsby develop",
+    "start": "gatsby develop",
+    "build": "gatsby build",
+    "serve": "gatsby serve",
+    "clean": "gatsby clean"
   },
   "repository": {
     "type": "git",
@@ -17,6 +22,11 @@
     "url": "https://github.com/gregsprototypes/git-actions-prototype/issues"
   },
   "homepage": "https://github.com/gregsprototypes/git-actions-prototype#readme",
+  "dependencies": {
+    "gatsby": "^4.9.2",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1"
+  },
   "devDependencies": {
     "jest": "^27.5.1"
   }
